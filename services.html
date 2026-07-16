@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services - Nadafa Solutions | Immaculate Trust in Juba</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#87b2c8",
+                        "surface": "#f7f9fb",
+                        "background": "#f7f9fb",
+                        "surface-variant": "#e0e3e5",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#eceef0",
+                        "surface-container-high": "#e6e8ea",
+                        "tertiary-fixed": "#bee9ff",
+                        "on-secondary-fixed-variant": "#004883",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed": "#001c39",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#002e3e",
+                        "surface-dim": "#d8dadc",
+                        "on-tertiary-fixed": "#001f2a",
+                        "inverse-surface": "#2d3133",
+                        "outline-variant": "#c5c5d3",
+                        "on-secondary-container": "#003c70",
+                        "primary": "#00236f",
+                        "secondary-fixed-dim": "#a4c9ff",
+                        "tertiary-container": "#164558",
+                        "surface-container-low": "#f2f4f6",
+                        "on-primary-fixed": "#00164e",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#191c1e",
+                        "surface-bright": "#f7f9fb",
+                        "secondary-container": "#64a8fe",
+                        "secondary": "#0060ac",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-primary-fixed-variant": "#264191",
+                        "primary-fixed": "#dce1ff",
+                        "on-surface-variant": "#444651",
+                        "secondary-fixed": "#d4e3ff",
+                        "outline": "#757682",
+                        "primary-container": "#1e3a8a",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#a1cde3",
+                        "surface-tint": "#4059aa",
+                        "inverse-primary": "#b6c4ff",
+                        "primary-fixed-dim": "#b6c4ff",
+                        "on-primary-container": "#90a8ff",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#1e4c5f",
+                        "on-background": "#191c1e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "4px",
+                        "margin-desktop": "80px",
+                        "sm": "16px",
+                        "xl": "64px",
+                        "md": "24px",
+                        "xs": "8px",
+                        "gutter": "24px",
+                        "lg": "40px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .premium-shadow {
+            box-shadow: 0 10px 40px -10px rgba(0, 35, 111, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md shadow-sm" id="main-header">
+<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-[1240px] mx-auto relative">
+<a href="index.html" class="flex items-center gap-xs cursor-pointer active:scale-95 transition-transform">
+<img alt="Nadafa Solutions Logo" class="h-16 w-16 object-contain" src="./logo.jpg"/>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Nadafa Solutions</span>
+</a>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors pb-1" href="index.html">Home</a>
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary pb-1" href="services.html">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors pb-1" href="about.html">About Us</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors pb-1" href="contact.html">Contact</a>
+<a href="contact.html" class="bg-primary text-on-primary font-label-md text-label-md px-md py-sm rounded-full hover:opacity-90 transition-all cursor-pointer active:scale-95 text-center shadow-md">Book Now</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button id="mobile-menu-btn" class="md:hidden text-primary p-2" onclick="document.getElementById('mobile-drawer').classList.remove('-translate-x-full')">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<!-- Navigation Drawer (Mobile) -->
+<div class="fixed inset-y-0 left-0 z-[60] flex flex-col h-full w-64 bg-surface shadow-lg -translate-x-full transition-transform duration-300 md:hidden" id="mobile-drawer">
+<div class="p-6 border-b border-outline-variant flex justify-between items-center">
+<span class="font-headline-md text-headline-md font-bold text-primary">Nadafa</span>
+<button onclick="document.getElementById('mobile-drawer').classList.add('-translate-x-full')">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex flex-col py-4 gap-2">
+<a class="flex items-center gap-4 px-6 py-3 text-on-surface-variant hover:bg-surface-container-low mx-2 rounded-full font-label-md text-label-md" href="index.html">
+<span class="material-symbols-outlined">home</span> Home
+        </a>
+<a class="flex items-center gap-4 px-6 py-3 bg-secondary-container text-on-secondary-container rounded-full mx-2 font-label-md text-label-md" href="services.html">
+<span class="material-symbols-outlined">sanitizer</span> Services
+        </a>
+<a class="flex items-center gap-4 px-6 py-3 text-on-surface-variant hover:bg-surface-container-low mx-2 rounded-full font-label-md text-label-md" href="about.html">
+<span class="material-symbols-outlined">info</span> About Us
+        </a>
+<a class="flex items-center gap-4 px-6 py-3 text-on-surface-variant hover:bg-surface-container-low mx-2 rounded-full font-label-md text-label-md" href="contact.html">
+<span class="material-symbols-outlined">call</span> Contact
+        </a>
+</div>
+</div>
+<main class="pt-32 pb-xl">
+<!-- Hero Section -->
+<section class="max-w-[1240px] mx-auto px-margin-mobile md:px-margin-desktop mb-xl text-center">
+<div class="inline-flex items-center gap-xs bg-primary/5 text-primary px-sm py-1 rounded-full border border-primary/10 mb-md">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Professional Hygiene Standards</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-sm">Our Cleaning Services</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+            Meticulous care for every corner. From corporate headquarters to your cherished home, we bring international standards of cleanliness to Juba.
+        </p>
+</section>
+<!-- Bento Grid Services -->
+<section class="max-w-[1240px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- General Cleaning -->
+<div id="general-cleaning" class="group bg-surface-container-lowest rounded-lg border border-outline-variant/30 p-md premium-shadow hover:translate-y-[-4px] transition-all duration-300 scroll-mt-24">
+<div class="bg-surface-container-high w-14 h-14 rounded-full flex items-center justify-center text-primary mb-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[32px]">cleaning_services</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">General Cleaning</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg h-24 overflow-hidden">
+                    Our baseline of excellence. Comprehensive dusting, mopping, and vacuuming tailored for busy households seeking a fresh start every week.
+                </p>
+<div class="flex items-center justify-between">
+<a href="contact.html" class="flex items-center gap-xs font-label-md text-label-md text-primary group/btn ml-auto">
+                        Book Now 
+                        <span class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Corporate Solutions -->
+<div id="corporate-services" class="group bg-surface-container-lowest rounded-lg border border-outline-variant/30 p-md premium-shadow hover:translate-y-[-4px] transition-all duration-300 scroll-mt-24">
+<div class="bg-surface-container-high w-14 h-14 rounded-full flex items-center justify-center text-primary mb-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[32px]">business_center</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Corporate Solutions</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg h-24 overflow-hidden">
+                    Enhancing productivity through hygiene. Specialized sanitization for desks, meeting rooms, and high-traffic common areas in Juba's business hubs.
+                </p>
+<div class="flex items-center justify-between">
+<a href="contact.html" class="flex items-center gap-xs font-label-md text-label-md text-primary group/btn ml-auto">
+                        Book Now 
+                        <span class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Indoor & Outdoor -->
+<div class="group bg-surface-container-lowest rounded-lg border border-outline-variant/30 p-md premium-shadow hover:translate-y-[-4px] transition-all duration-300 lg:row-span-2 flex flex-col justify-between overflow-hidden relative">
+<div class="relative z-10">
+<div class="bg-surface-container-high w-14 h-14 rounded-full flex items-center justify-center text-primary mb-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[32px]">deck</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Indoor &amp; Outdoor</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+                        Complete compound care. We handle internal deep cleans while simultaneously revitalizing your porch, driveway, and garden paths. A holistic approach to property maintenance.
+                    </p>
+<ul class="space-y-sm mb-lg">
+<li class="flex items-center gap-xs text-on-surface-variant font-label-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Garden Pathway Clearing
+                        </li>
+<li class="flex items-center gap-xs text-on-surface-variant font-label-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Window &amp; Sill Deep Clean
+                        </li>
+<li class="flex items-center gap-xs text-on-surface-variant font-label-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Terrace Pressure Washing
+                        </li>
+</ul>
+</div>
+<div class="mt-auto pt-md relative z-10">
+<a href="contact.html" class="w-full bg-primary text-on-primary font-label-md text-label-md py-sm rounded-full group-hover:bg-primary-container transition-all text-center inline-block">
+                        Request Full Service
+</a>
+</div>
+<div class="absolute -bottom-10 -right-10 opacity-[0.03] rotate-12 pointer-events-none">
+<span class="material-symbols-outlined text-[240px]">water_drop</span>
+</div>
+</div>
+<!-- Laundry -->
+<div class="group bg-surface-container-lowest rounded-lg border border-outline-variant/30 p-md premium-shadow hover:translate-y-[-4px] transition-all duration-300">
+<div class="bg-surface-container-high w-14 h-14 rounded-full flex items-center justify-center text-primary mb-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[32px]">local_laundry_service</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Premium Laundry</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg h-24 overflow-hidden">
+                    Wash, dry, and fold service using eco-friendly detergents that are gentle on fabrics and the environment. Same-day options available.
+                </p>
+<div class="flex items-center justify-between">
+<a href="contact.html" class="flex items-center gap-xs font-label-md text-label-md text-primary group/btn ml-auto">
+                        Book Now 
+                        <span class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Carpet Cleaning -->
+<div id="carpet-cleaning" class="group bg-surface-container-lowest rounded-lg border border-outline-variant/30 p-md premium-shadow hover:translate-y-[-4px] transition-all duration-300 scroll-mt-24">
+<div class="bg-surface-container-high w-14 h-14 rounded-full flex items-center justify-center text-primary mb-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[32px]">dry_cleaning</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Carpet Revitalization</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg h-24 overflow-hidden">
+                    Industrial-grade extraction technology to remove deep-seated dust and allergens from high-pile carpets and area rugs.
+                </p>
+<div class="flex items-center justify-between">
+<a href="contact.html" class="flex items-center gap-xs font-label-md text-label-md text-primary group/btn ml-auto">
+                        Book Now 
+                        <span class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Move-In / Move-Out -->
+<div class="group bg-surface-container-lowest rounded-lg border border-outline-variant/30 p-md premium-shadow hover:translate-y-[-4px] transition-all duration-300 md:col-span-2 lg:col-span-1">
+<div class="bg-surface-container-high w-14 h-14 rounded-full flex items-center justify-center text-primary mb-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[32px]">home_repair_service</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Move-In/Out Clean</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg h-24 overflow-hidden">
+                    Relocation made simple. We deep clean kitchens, bathrooms, and cabinets so your new home is sterile and welcoming from day one.
+                </p>
+<div class="flex items-center justify-between">
+<a href="contact.html" class="flex items-center gap-xs font-label-md text-label-md text-primary group/btn ml-auto">
+                        Book Now 
+                        <span class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Cleaning Essentials Kit -->
+<div class="group bg-primary text-on-primary rounded-lg p-md md:col-span-2 flex flex-col md:flex-row items-center gap-lg premium-shadow relative overflow-hidden">
+<div class="flex-1 z-10">
+<h3 class="font-headline-md text-headline-md mb-sm">Nadafa Essentials Kits</h3>
+<p class="font-body-md text-body-md opacity-90 mb-lg">
+                        Prefer doing it yourself? Purchase our professional-grade, eco-certified cleaning chemicals and tools, the same ones used by our expert teams.
+                    </p>
+<button id="shop-essentials-btn" class="bg-surface-container-lowest text-primary font-label-md text-label-md px-lg py-sm rounded-full hover:bg-surface-container-high transition-all active:scale-95">
+                        Shop Essentials
+</button>
+</div>
+<div class="w-full md:w-64 h-48 rounded-lg bg-primary-container relative overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 16px 16px;"></div>
+<span class="material-symbols-outlined text-[80px] text-on-primary-container/30">inventory_2</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Quote Banner -->
+<section class="max-w-[1240px] mx-auto px-margin-mobile md:px-margin-desktop mt-xl">
+<div class="bg-surface-container p-lg md:p-xl rounded-lg border border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-lg relative overflow-hidden">
+<div class="max-w-xl z-10">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Need a specialized service?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    Every space is unique. Contact our concierge team for a personalized cleaning plan that fits your schedule and specific hygienic requirements.
+                </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-md z-10">
+<a href="contact.html" class="bg-primary text-on-primary font-label-md text-label-md px-xl py-md rounded-full shadow-lg hover:bg-primary-container transition-all active:scale-95 text-center inline-block">
+                    Request a Quote
+</a>
+<a href="https://wa.me/211921313339?text=Hello%20Nadafa%20Solutions%20I%20need%20cleaning%20service%20at%20my%20house%20Could%20you%20please%20let%20me%20know%20your%20rates%20for%20this%20and%20your%20earliest%20availability%3F" class="bg-[#25D366] text-white font-label-md text-label-md px-xl py-md rounded-full shadow-lg hover:bg-[#20ba5a] transition-all active:scale-95 text-center inline-block">
+                    WhatsApp Support
+</a>
+</div>
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -mr-32 -mt-32"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest w-full rounded-t-lg mt-xl">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop py-xl max-w-[1240px] mx-auto">
+<div class="space-y-6">
+<div class="flex items-center gap-2">
+<img alt="Nadafa Solutions Logo" class="h-24 w-24 object-contain" src="./logo.jpg"/>
+<span class="font-headline-md text-headline-md font-bold text-primary">Nadafa Solutions</span>
+</div>
+<p class="text-on-surface-variant font-body-md text-body-md">South Sudan's premier cleaning solution. We bring hygiene, health, and happiness to your doorstep.</p>
+
+</div>
+<div class="md:ml-auto">
+<h6 class="font-label-md text-label-md text-primary mb-6 uppercase tracking-widest">Quick Links</h6>
+<ul class="space-y-4 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform inline-block" href="services.html#general-cleaning">Residential Cleaning</a></li>
+<li><a class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform inline-block" href="services.html#corporate-services">Corporate Solutions</a></li>
+<li><a class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform inline-block" href="services.html">Services Portfolio</a></li>
+<li><a class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform inline-block" href="https://wa.me/211921313339?text=Hello%20Nadafa%20Solutions%20I%20need%20cleaning%20service%20at%20my%20house%20Could%20you%20please%20let%20me%20know%20your%20rates%20for%20this%20and%20your%20earliest%20availability%3F">WhatsApp Support</a></li>
+<li class="text-primary font-bold">Location: Buaba Lou, Gudele</li>
+</ul>
+</div>
+<div class="md:ml-auto">
+<h6 class="font-label-md text-label-md text-primary mb-6 uppercase tracking-widest">Contact Info</h6>
+<div class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+<a href="mailto:dikojanent@gmail.com" class="hover:text-primary transition-colors">nadafasolutions@gmail.com</a>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">phone</span>
+<span>+211 921 313 339</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span>Buaba Lou, Gudele, Juba, South Sudan</span>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-[1240px] mx-auto px-margin-mobile md:px-margin-desktop py-8 border-t border-outline-variant/30 text-center">
+<p class="text-on-surface-variant font-body-md text-body-md">© 2026 Nadafa Solutions. Professional Trust in Juba.</p>
+</div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const cards = document.querySelectorAll('.group');
+        cards.forEach((card, index) => {
+            if (card.id !== 'mobile-drawer') {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.transition = 'all 0.6s cubic-bezier(0.22, 1, 0.36, 1)';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100 * index);
+            }
+        });
+
+        // Shop Essentials toast notification
+        const shopBtn = document.getElementById('shop-essentials-btn');
+        if (shopBtn) {
+            shopBtn.addEventListener('click', () => {
+                const toast = document.createElement('div');
+                toast.className = 'fixed bottom-6 left-6 z-[100] bg-primary text-white px-6 py-4 rounded-full shadow-2xl flex items-center gap-3 transition-all duration-300 transform translate-y-10 opacity-0';
+                toast.innerHTML = `
+                    <span class="material-symbols-outlined">shopping_bag</span>
+                    <span class="font-label-md">DIY Shop coming soon! Contact us directly to order.</span>
+                `;
+                document.body.appendChild(toast);
+                setTimeout(() => {
+                    toast.classList.remove('translate-y-10', 'opacity-0');
+                }, 10);
+                setTimeout(() => {
+                    toast.classList.add('translate-y-10', 'opacity-0');
+                    setTimeout(() => {
+                        toast.remove();
+                    }, 300);
+                }, 4000);
+            });
+        }
+
+        // Close drawer when clicking outside
+        document.addEventListener('click', (e) => {
+            const drawer = document.getElementById('mobile-drawer');
+            const toggleBtn = document.getElementById('mobile-menu-btn');
+            if (drawer && !drawer.contains(e.target) && (!toggleBtn || !toggleBtn.contains(e.target))) {
+                drawer.classList.add('-translate-x-full');
+            }
+        });
+    });
+</script>
+</body></html>

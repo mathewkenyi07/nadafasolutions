@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Nadafa Solutions - Immaculate Trust in Juba</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#87b2c8",
+                        "surface": "#f7f9fb",
+                        "background": "#f7f9fb",
+                        "surface-variant": "#e0e3e5",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#eceef0",
+                        "surface-container-high": "#e6e8ea",
+                        "tertiary-fixed": "#bee9ff",
+                        "on-secondary-fixed-variant": "#004883",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed": "#001c39",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#002e3e",
+                        "surface-dim": "#d8dadc",
+                        "on-tertiary-fixed": "#001f2a",
+                        "inverse-surface": "#2d3133",
+                        "outline-variant": "#c5c5d3",
+                        "on-secondary-container": "#003c70",
+                        "primary": "#00236f",
+                        "secondary-fixed-dim": "#a4c9ff",
+                        "tertiary-container": "#164558",
+                        "surface-container-low": "#f2f4f6",
+                        "on-primary-fixed": "#00164e",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#191c1e",
+                        "surface-bright": "#f7f9fb",
+                        "secondary-container": "#64a8fe",
+                        "secondary": "#0060ac",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-primary-fixed-variant": "#264191",
+                        "primary-fixed": "#dce1ff",
+                        "on-surface-variant": "#444651",
+                        "secondary-fixed": "#d4e3ff",
+                        "outline": "#757682",
+                        "primary-container": "#1e3a8a",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#a1cde3",
+                        "surface-tint": "#4059aa",
+                        "inverse-primary": "#b6c4ff",
+                        "primary-fixed-dim": "#b6c4ff",
+                        "on-primary-container": "#90a8ff",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#1e4c5f",
+                        "on-background": "#191c1e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "4px",
+                        "margin-desktop": "80px",
+                        "sm": "16px",
+                        "xl": "64px",
+                        "md": "24px",
+                        "xs": "8px",
+                        "gutter": "24px",
+                        "lg": "40px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            backdrop-filter: blur(12px);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 240px;
+            gap: 24px;
+        }
+        .bento-item-large { grid-column: span 2; grid-row: span 2; }
+        .bento-item-wide { grid-column: span 2; }
+        @media (max-width: 768px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+                grid-auto-rows: auto;
+            }
+            .bento-item-large, .bento-item-wide { grid-column: span 1; grid-row: span 1; }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 glass-header shadow-sm border-b border-outline-variant/20" id="main-header">
+<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-[1240px] mx-auto relative">
+<a href="index.html" class="flex items-center gap-sm cursor-pointer active:scale-95 transition-transform">
+<img alt="Nadafa Solutions Logo" class="w-16 h-16 object-contain" src="./logo.jpg"/>
+<span class="font-headline-md text-headline-md font-bold text-primary">Nadafa Solutions</span>
+</a>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md pb-1" href="index.html">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md pb-1" href="services.html">Services</a>
+<a class="text-primary font-bold border-b-2 border-primary font-label-md text-label-md pb-1" href="about.html">About Us</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md pb-1" href="contact.html">Contact</a>
+<a href="contact.html" class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md text-label-md hover:opacity-90 transition-opacity shadow-sm active:scale-95 text-center inline-block">Book Now</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button id="mobile-menu-btn" class="md:hidden text-primary p-2" onclick="document.getElementById('mobile-drawer').classList.remove('-translate-x-full')">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<!-- Navigation Drawer (Mobile) -->
+<div class="fixed inset-y-0 left-0 z-[60] flex flex-col h-full w-64 bg-surface shadow-lg -translate-x-full transition-transform duration-300 md:hidden" id="mobile-drawer">
+<div class="p-6 border-b border-outline-variant flex justify-between items-center">
+<span class="font-headline-md text-headline-md font-bold text-primary">Nadafa</span>
+<button onclick="document.getElementById('mobile-drawer').classList.add('-translate-x-full')">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex flex-col py-4 gap-2">
+<a class="flex items-center gap-4 px-6 py-3 text-on-surface-variant hover:bg-surface-container-low mx-2 rounded-full font-label-md text-label-md" href="index.html">
+<span class="material-symbols-outlined">home</span> Home
+        </a>
+<a class="flex items-center gap-4 px-6 py-3 text-on-surface-variant hover:bg-surface-container-low mx-2 rounded-full font-label-md text-label-md" href="services.html">
+<span class="material-symbols-outlined">sanitizer</span> Services
+        </a>
+<a class="flex items-center gap-4 px-6 py-3 bg-secondary-container text-on-secondary-container rounded-full mx-2 font-label-md text-label-md" href="about.html">
+<span class="material-symbols-outlined">info</span> About Us
+        </a>
+<a class="flex items-center gap-4 px-6 py-3 text-on-surface-variant hover:bg-surface-container-low mx-2 rounded-full font-label-md text-label-md" href="contact.html">
+<span class="material-symbols-outlined">call</span> Contact
+        </a>
+</div>
+</div>
+<main class="pt-32">
+<!-- Hero / Story Section -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-[1240px] mx-auto mb-xl">
+<div class="flex flex-col md:flex-row gap-lg items-center">
+<div class="flex-1 space-y-md">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">OUR MISSION</span>
+<h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary leading-tight">Elevating Standards of Hygiene in Juba</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Founded with a vision to redefine professional cleaning in South Sudan, Nadafa Solutions blends international corporate standards with deep local expertise. We believe that a clean environment is the foundation of health, productivity, and peace of mind.
+                </p>
+<div class="pt-sm space-y-xs">
+<div class="flex items-center gap-sm text-secondary">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-md text-label-md text-on-surface">100% Eco-Friendly Materials</span>
+</div>
+<div class="flex items-center gap-sm text-secondary">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">group</span>
+<span class="font-label-md text-label-md text-on-surface">Vetted &amp; Trained Professional Team</span>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full relative">
+<div class="aspect-square rounded-lg overflow-hidden shadow-lg border border-outline-variant/30">
+<div class="bg-cover bg-center w-full h-full" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBS0IiJAUeZvLncDkP-T46Ys86z1ybZto9h_h_C8APZidRF9PQtJErqSU1mfrMrh7j4K9r1WSrIxQ8NTwcw4iMk_QwjSauZmiohP5rv6-PjU3xgLOUAbeloOAjM9SiV6r11n7Xk1jkntUv58M2NNAQJ6muTb6lTtgjQe4zaQOimhI6Ys6leIFK5HTJUTjsLx39DcXQqBX75PBTpJsmgM45nnOtdQeV8-KaMNXwSemjsleQKYY_w2depHA')"></div>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-lg shadow-xl hidden lg:block border border-outline-variant/20">
+<p class="font-headline-md text-headline-md text-primary font-bold">500+</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Spaces Sanitized in Juba</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="bg-surface-container-low py-xl">
+<div class="px-margin-mobile md:px-margin-desktop max-w-[1240px] mx-auto text-center mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Meet the Professionals</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">Our team is the heart of Nadafa. Every cleaner is rigorously vetted, professionally trained, and committed to providing service with a smile.</p>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-[1240px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Team Member 1 -->
+<div class="bg-surface rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow group border border-outline-variant/10">
+<div class="h-64 relative overflow-hidden">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-500" style="background-image: url('./diko_janet.jpg')"></div>
+</div>
+<div class="p-md">
+<p class="font-label-md text-label-md text-primary">Diko Janet Isaac</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Operations Supervisor</p>
+</div>
+</div>
+<!-- Team Member 2 -->
+<div class="bg-surface rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow group border border-outline-variant/10">
+<div class="h-64 relative overflow-hidden">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-500" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAnVBqQw1JOs9vTnUc8uA_VfIn8IbOjUx9NTzhUVEnPlI-DibEzsNjP29AZ2CBB03DjtUQfHkGGNqytSq4bmPQtFNf1kwJSS2xLAXIQY9sxyGuHbe4C3cw9eqs5vMDLkVWXofHzD3V-qme3HNuQxEIP9CW9cjiEaaQcxM-MxJlZna8J5leh6aDWkSefaEqbLWz79OwGIkLTnbcHlHCIhOh_Fo5I3K-Xd5Hrj_itZG0ZTDiXC8MYD1S6MA')"></div>
+</div>
+<div class="p-md">
+<p class="font-label-md text-label-md text-primary">Emmanuel Ladu</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Lead Residential Specialist</p>
+</div>
+</div>
+<!-- Team Member 3 -->
+<div class="bg-surface rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow group border border-outline-variant/10">
+<div class="h-64 relative overflow-hidden">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-500" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAwt7AGN_H1pWa66pmy3dH1g4NVirq5dur6fxyKLGnd4qf22o4defUUrGiF4FQtAuRMkhwiq_LRDCzYtb1X0qVdjihUQHqg-7E_vZ-jPTudYpPgMwhskgj3poDhNLKYVEf5qJrkGlVYkTikGrr9S0TTVKttYA563_bB5ec_5UtYftfnTS_PbAJ4GBHuKKGvSodqqCWOkoapxvkpe8uUluTJNXxVUKZHAhH-YK2NTijfgZLZWLpG4ANkmw')"></div>
+</div>
+<div class="p-md">
+<p class="font-label-md text-label-md text-primary">Mary Kiden</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Eco-Certification Lead</p>
+</div>
+</div>
+<!-- Team Member 4 -->
+<div class="bg-surface rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow group border border-outline-variant/10">
+<div class="h-64 relative overflow-hidden">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-500" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDdasgzF8To_jC-NnWXjuU4X44V_hujyovybL_OkHBeRHGG9nsuFf0pdtKrkF5blmHOdSifMVWFF3DZUr-Fv4LH2sUNa5wZFonwScI4d760OWETXrrU2dB-lClCCN94v41tD5Kr-ndoQtjDsHtZWPzcGrWCsJkLEBt_SqQROBDB9Ho-0MwTXGmMkKz3gfg3zNUAQAnO81bcjXI95W6IfwRmZ2gfQclsl8FLuwHRO1o25wYbj_grzUigAg')"></div>
+</div>
+<div class="p-md">
+<p class="font-label-md text-label-md text-primary">James Taban</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Sanitization Expert</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section (Bento Grid) -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-[1240px] mx-auto py-xl">
+<div class="mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary">The Art of Clean</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Witness the transformation of commercial and residential spaces across Juba.</p>
+</div>
+<div class="bento-grid">
+<div class="bento-item-large rounded-lg overflow-hidden relative shadow-sm border border-outline-variant/10">
+<div class="bg-cover bg-center w-full h-full" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDS8YeftjzBOgjAPSfn3ISrjUtHUUTWojoYCQWbVitSxzlsyYvf1mJt1EngIih7Ns3c9argTpisQv6efhOAIWFNs4dx1gfx7Qdy8oRmpdsWnYYVDSJWzaExd4dygZsj9YUlELyV1PlA9FqnyqoVzzHj-awPvRvlkPtYlBwSqWyL6QrBHURFDlFRBU28QU-EXLgxc8HHbMoYMxU4eEO7CeYHEoHMzOEjB09A99obLI49pp8l232CrZcK7A')"></div>
+<div class="absolute bottom-4 left-4 bg-primary/90 text-on-primary px-3 py-1 rounded-full text-label-sm font-label-sm">Corporate Solution</div>
+</div>
+<div class="rounded-lg overflow-hidden relative shadow-sm border border-outline-variant/10">
+<div class="bg-cover bg-center w-full h-full" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB2qVUNtWoBiSoQV2hjiOWHNfcA00-X_7WcZiYZR329eTZYQPHO1S4TZ2NFKR0FJFBjHvO_UYJkFQcm6pQvOMnVuphEVETdQzYjtxmWqEE_KOmMAwCJ4gVrMicn9dbndqMeRY_NMox8V2V_HG-CyosAN4lYMvriGj1vqi9xGYHgPPng3WRFv3SX6XzpwacLndgG1GTwRz6K013ZCB29yTValBISDhAe51Yat5Fpve72o2PgJAy1tWzGgw')"></div>
+</div>
+<div class="rounded-lg overflow-hidden relative shadow-sm border border-outline-variant/10">
+<div class="bg-cover bg-center w-full h-full" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDlOxjjhZQizZfhxH7e_rTscfSQd2pQ582yLtyF5mXayhDCzWDhb9xDPt-QiAHuRpa2aBphqB1GlKxY0cZOvIuJoI9XcSBAut4y0Ny_DLBIND-XRS-j8excrjBjaF7RJrmtye015iO27dltcjYys4-H7WzGsT92IwFP3Ol95IRmbpeXB7vZHqWjHApouX2AbujZH6lwB2g_KRiLxiTbp9tECd22r6IDOiRFr_-FeAMMDwQ5FMDLr7apNA')"></div>
+</div>
+<div class="bento-item-wide rounded-lg overflow-hidden relative shadow-sm border border-outline-variant/10">
+<div class="bg-cover bg-center w-full h-full" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAR7TylvhWbA_8PAzlRX89ze8em51uXdCUj2pIoa_6oh8wXlQUxo8u7WDDppjqIjoJMrj900UFpEOnn5dZxgh2lm9gpJD7c0BCMwaV7QVe9mNfc-5tkuzpAS3-AINoSnzF4dxmXNnlKeewkHoNUsW8JFknDoWUfawdWk8EksRdRLme82L9TtWFmtJrBuVeOn7tDAaGA2bluZm_LOY4dKUgXUOuDwMKTuN0jMeAX_flgvpX4LBGYT3BGeg')"></div>
+<div class="absolute top-4 right-4 bg-white/90 text-primary px-3 py-1 rounded-full text-label-sm font-label-sm">Residential Deep Clean</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="bg-surface-container py-xl" id="faq">
+<div class="px-margin-mobile md:px-margin-desktop max-w-[800px] mx-auto">
+<div class="text-center mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Frequently Asked Questions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Everything you need to know about South Sudan's premier cleaning service.</p>
+</div>
+<div class="space-y-md">
+<!-- FAQ 1 -->
+<div class="bg-surface-container-lowest rounded-lg border border-outline-variant/30 overflow-hidden shadow-sm">
+<button class="w-full flex justify-between items-center p-md text-left transition-colors hover:bg-surface-container-low group" onclick="toggleFaq(this)">
+<span class="font-label-md text-label-md text-primary">What areas do you serve in Juba?</span>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-md pb-md">
+<p class="font-body-md text-body-md text-on-surface-variant">We currently provide services throughout the greater Juba area, including Hai-Amara, Munuki, Jebel, and the Central Business District. For specialized corporate projects outside Juba, please contact our logistics team.</p>
+</div>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-surface-container-lowest rounded-lg border border-outline-variant/30 overflow-hidden shadow-sm">
+<button class="w-full flex justify-between items-center p-md text-left transition-colors hover:bg-surface-container-low group" onclick="toggleFaq(this)">
+<span class="font-label-md text-label-md text-primary">Do you provide your own cleaning supplies?</span>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-md pb-md">
+<p class="font-body-md text-body-md text-on-surface-variant">Yes, Nadafa Solutions arrives fully equipped with specialized commercial-grade equipment and 100% eco-friendly, biodegradable cleaning agents. We don't require you to provide anything but access to the space.</p>
+</div>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-surface-container-lowest rounded-lg border border-outline-variant/30 overflow-hidden shadow-sm">
+<button class="w-full flex justify-between items-center p-md text-left transition-colors hover:bg-surface-container-low group" onclick="toggleFaq(this)">
+<span class="font-label-md text-label-md text-primary">How does your pricing work?</span>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-md pb-md">
+<p class="font-body-md text-body-md text-on-surface-variant">Pricing is based on square footage and the type of service required (Standard, Deep Clean, or Sanitization). We offer transparent, upfront quotes after a brief initial assessment of your property.</p>
+</div>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-surface-container-lowest rounded-lg border border-outline-variant/30 overflow-hidden shadow-sm">
+<button class="w-full flex justify-between items-center p-md text-left transition-colors hover:bg-surface-container-low group" onclick="toggleFaq(this)">
+<span class="font-label-md text-label-md text-primary">Can I schedule recurring cleanings?</span>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-md pb-md">
+<p class="font-body-md text-body-md text-on-surface-variant">Absolutely. Most of our clients prefer our weekly or bi-weekly maintenance schedules. Recurring clients benefit from discounted rates and priority booking during peak seasons.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-[1240px] mx-auto py-xl">
+<div class="bg-primary-container rounded-lg p-lg text-center md:text-left md:flex items-center justify-between gap-lg overflow-hidden relative">
+<div class="relative z-10">
+<h2 class="font-headline-lg text-headline-lg text-on-primary-container mb-xs">Ready for a Cleaner Tomorrow?</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container/80">Experience the difference of professional care today.</p>
+</div>
+<div class="mt-lg md:mt-0 flex flex-col sm:flex-row gap-md justify-center relative z-10">
+<a href="contact.html" class="bg-white text-primary px-xl py-3 rounded-full font-label-md text-label-md hover:bg-surface-container-lowest transition-all shadow-md active:scale-95 text-center inline-block">Book Now</a>
+<a href="https://wa.me/211921313339?text=Hello%20Nadafa%20Solutions%20I%20need%20cleaning%20service%20at%20my%20house%20Could%20you%20please%20let%20me%20know%20your%20rates%20for%20this%20and%20your%20earliest%20availability%3F" class="bg-[#25D366] text-white px-xl py-3 rounded-full font-label-md text-label-md hover:bg-[#20ba5a] transition-all active:scale-95 text-center inline-block">WhatsApp Us</a>
+</div>
+<!-- Abstract decoration -->
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest w-full rounded-t-lg mt-xl">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop py-xl max-w-[1240px] mx-auto">
+<div class="space-y-6">
+<div class="flex items-center gap-2">
+<img alt="Nadafa Solutions Logo" class="h-24 w-24 object-contain" src="./logo.jpg"/>
+<span class="font-headline-md text-headline-md font-bold text-primary">Nadafa Solutions</span>
+</div>
+<p class="text-on-surface-variant font-body-md text-body-md">South Sudan's premier cleaning solution. We bring hygiene, health, and happiness to your doorstep.</p>
+
+</div>
+<div class="md:ml-auto">
+<h6 class="font-label-md text-label-md text-primary mb-6 uppercase tracking-widest">Quick Links</h6>
+<ul class="space-y-4 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform inline-block" href="services.html#general-cleaning">Residential Cleaning</a></li>
+<li><a class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform inline-block" href="services.html#corporate-services">Corporate Solutions</a></li>
+<li><a class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform inline-block" href="services.html">Services Portfolio</a></li>
+<li><a class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform inline-block" href="https://wa.me/211921313339?text=Hello%20Nadafa%20Solutions%20I%20need%20cleaning%20service%20at%20my%20house%20Could%20you%20please%20let%20me%20know%20your%20rates%20for%20this%20and%20your%20earliest%20availability%3F">WhatsApp Support</a></li>
+<li class="text-primary font-bold">Location: Buaba Lou, Gudele</li>
+</ul>
+</div>
+<div class="md:ml-auto">
+<h6 class="font-label-md text-label-md text-primary mb-6 uppercase tracking-widest">Contact Info</h6>
+<div class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+<a href="mailto:dikojanent@gmail.com" class="hover:text-primary transition-colors">nadafasolutions@gmail.com</a>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">phone</span>
+<span>+211 921 313 339</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span>Buaba Lou, Gudele, Juba, South Sudan</span>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-[1240px] mx-auto px-margin-mobile md:px-margin-desktop py-8 border-t border-outline-variant/30 text-center">
+<p class="text-on-surface-variant font-body-md text-body-md">© 2026 Nadafa Solutions. Professional Trust in Juba.</p>
+</div>
+</footer>
+<script>
+    function toggleFaq(button) {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('.material-symbols-outlined');
+        
+        // Toggle current
+        const isHidden = content.classList.contains('hidden');
+        
+        // Close all others
+        document.querySelectorAll('.faq-content').forEach(el => el.classList.add('hidden'));
+        document.querySelectorAll('.material-symbols-outlined').forEach(el => {
+            if(el.innerText === 'expand_more') el.style.transform = 'rotate(0deg)';
+        });
+
+        if(isHidden) {
+            content.classList.remove('hidden');
+            icon.style.transform = 'rotate(180deg)';
+        } else {
+            content.classList.add('hidden');
+            icon.style.transform = 'rotate(0deg)';
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // Close drawer when clicking outside
+        document.addEventListener('click', (e) => {
+            const drawer = document.getElementById('mobile-drawer');
+            const toggleBtn = document.getElementById('mobile-menu-btn');
+            if (drawer && !drawer.contains(e.target) && (!toggleBtn || !toggleBtn.contains(e.target))) {
+                drawer.classList.add('-translate-x-full');
+            }
+        });
+    });
+</script>
+</body></html>
